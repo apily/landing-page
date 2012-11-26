@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head profile="http://www.w3.org/2005/10/profile">
+    <title>Apily</title>
+    <!-- <link rel="icon" type="image/png" href="./favicon.png" /> -->
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div id="logo" class="height-center width-center logo" style="background-image: url(images/A_logo.png);"></div>
+    </div>
+
+    <script src="js/ready.js"></script>
+    <script src="js/qwery.js"></script>
+    <script src="js/bonzo.js"></script>
+    <script>
+        domReady(function () {
+            function $ (selector) {
+                var result = selector;
+                if (typeof(selector) === 'string') {
+                    result = selector[0] === '<' && selector[selector.length - 1] === '>' ? bonzo.create(selector) : bonzo(qwery(selector));
+                }
+
+                return result;
+            }
+
+            $('#logo').addClass('ready-to-appear');
+        });
+    </script>
+</body>
+</html>

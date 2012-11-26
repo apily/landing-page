@@ -1,0 +1,63 @@
+body {
+    background: #FFFFFF;
+}
+
+.logo {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    /* background-image: url(../images/G_logo.png); */
+    background-origin: padding-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    display: block;
+    width: 372px;
+    height: 136px;
+    text-align: -webkit-left;
+    opacity: 0.0;
+}
+
+.ready-to-appear {
+    opacity: 1.0;
+    transition: opacity 5s ease-in;
+    -moz-transition: opacity 5s ease-in; /* Firefox 4 */
+    -webkit-transition: opacity 5s ease-in; /* Safari and Chrome */
+    -o-transition: opacity 5s ease-in; /* Opera */
+}
+
+.width-center {
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.brand {
+    width: 4.5em;
+    height: 96px;
+    font-size: 96px;
+    /* font-family: 'Michroma', sans-serif; */
+    font-family: Helvetica;
+    cursor: default;
+
+    position:absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    margin: auto;
+    /*font-variant: small-caps;*/
+    font-weight: bold;
+}
+
+.height-center {
+    position: absolute; 
+    top: 0; 
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    margin: auto;
+}
+
+
+
